@@ -24,7 +24,6 @@ public class Main {
             System.out.print(arr[i] + "\t");
         }
     }
-
     public static int findValue(int[] array, int index_del) {
         boolean isExist = false;
         for (int i = 0; i < array.length; i++) {
