@@ -4,19 +4,21 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.print("Enter size arr:");
+        System.out.println("Enter size arr:");
         Scanner scanner = new Scanner(System.in);
         int sizearr = scanner.nextInt();
         int[] arr = new int[sizearr];
-
+        System.out.println("Array is:");
         for (int i = 0; i < arr.length; i++){
             arr[i] = (int) (Math.random() * 10);
             System.out.print(arr[i] + " ");
         }
-        System.out.print("Enter a number:");
+        System.out.println();
+        System.out.println("Enter a number want find and delete:");
         int number = scanner.nextInt();
         findValue(arr, number);
-        System.out.println("New arr:");
+
+        System.out.println("New array:");
         delValue(arr, number);
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + "\t");
@@ -27,7 +29,7 @@ public class Main {
         boolean isExist = false;
         for (int i = 0; i < array.length; i++) {
             if (array[i] == index_del) {
-                System.out.println("Position of the number in the list " + index_del + " is: " + (i + 1));
+                System.out.println("Position of the number in the list " + index_del);
                 isExist = true;
                 break;
             }
